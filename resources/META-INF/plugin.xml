@@ -1,0 +1,43 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>EzioGenTurbo</name>
+  <version>1.0</version>
+  <vendor email="heyandamowang@qq.com" url="https://github.com/EzioL">Ezio</vendor>
+
+  <description><![CDATA[
+      一键生成DO的Dao和Service插件<br>
+      <p>-支持Dao文件的后缀和注解配置</p>
+      <p>-支持Dao文件的XML创建</p>
+      <p>-支持Service文件的注解配置</p>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      nothing<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <applicationConfigurable instance="GenConfigurable"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="GenTurboAction" class="GenTurboAction" text="EzioGenTurbo" description="EzioGenTurbo">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+    </action>
+
+
+  </actions>
+
+</idea-plugin>
