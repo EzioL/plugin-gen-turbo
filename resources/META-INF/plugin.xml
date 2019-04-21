@@ -1,5 +1,5 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
+  <id>com.ezio.gen.turbo</id>
   <name>EzioGenTurbo</name>
   <version>1.0</version>
   <vendor email="heyandamowang@qq.com" url="https://github.com/EzioL">Ezio</vendor>
